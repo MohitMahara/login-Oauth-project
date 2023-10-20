@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/3bf8c869a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="home-section">
+        <div class="form-section">
+            <p class="starting-txt">START FOR FREE</p>
+            <h1 class="form-heading">Create<br> your account</h1>
+            <p class="login-link">Already a member ? <a href="/login">Log in</a></p>
+
+            <form action="/register" method="post">
+
+                <label for="fullName"><span>Name</span><input type="text" name="fullName" id="fName" required></label>
+
+                <label for="email" class="email"><span>E-mail</span><input type="email" name="email" id="email"
+                        required></label>
+
+                <label for="password" class="password"><span>Password</span><input type="password" name="password"
+                        id="password" required></label>
+
+                <input type="submit" value="Create account" id="submitBtn">
+
+            </form>
+
+            <div class="signUpWith-box">
+                <span>Or connect with</span>
+                <hr>
+                <div class="signUp-container">
+                    <div class="google">
+                        <a href="/auth/google" class="google-icon"><i class="fa-brands fa-google"></i>SignUp with
+                            Google</a>
+                    </div>
+
+                    <div class="github">
+                        <a href="/auth/github" class="github-icon"><i class="fa-brands fa-github"></i>SignUp with
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-section">
+            <img src="assets/login.png" alt="login img" width="100%" height="100%">
+        </div>
+    </section>
+</body>
+
+</html>
